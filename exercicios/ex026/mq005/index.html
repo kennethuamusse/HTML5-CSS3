@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id= "burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -23,9 +25,18 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minima quidem alias ad deleniti aliquam ullam veritatis quasi! Repellendus quam ea rem unde quisquam natus repellat excepturi vitae tenetur maiores?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id ipsum nulla culpa cum libero magnam totam explicabo quos atque. Dolores aspernatur rem minus cum voluptatum alias vero, ipsa saepe?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione reiciendis ducimus excepturi non, eligendi omnis dicta fugiat vero architecto! Ratione fuga eos provident nihil officiis voluptas reiciendis harum sed ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minima quidem alias ad deleniti aliquam ullam veritatis quasi! Repellendus quam ea rem unde quisquam natus repellat excepturi vitae tenetur maiores?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id ipsum nulla culpa cum libero magnam totam explicabo quos atque. Dolores aspernatur rem minus cum voluptatum alias vero, ipsa saepe?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam obcaecati est repellendus. Aperiam aut assumenda hic voluptatem corporis nam recusandae consequatur laborum maxime! Amet nobis reprehenderit voluptas repellendus repellat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione reiciendis ducimus excepturi non, eligendi omnis dicta fugiat vero architecto! Ratione fuga eos provident nihil officiis voluptas reiciendis harum sed ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis ea ad perferendis vero. Id distinctio, delectus perferendis sapiente recusandae aut unde totam quibusdam, aliquid praesentium illum. Quos aliquam consequuntur magni?</p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
